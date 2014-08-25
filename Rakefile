@@ -77,7 +77,7 @@ Motion::Project::App.setup do |app|
     # pod 'Facebook-iOS-SDK'
   end
 
-  FB_APP_ID = '630450980402337'
+  FB_APP_ID = '<your facebook app id>'
   app.info_plist['FacebookAppID'] = FB_APP_ID
   app.info_plist['CFBundleURLTypes'] = [{ CFBundleURLSchemes: ["fb#{FB_APP_ID}"] }]
 end

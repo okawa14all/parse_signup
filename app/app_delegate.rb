@@ -28,8 +28,8 @@ class AppDelegate
 
   def configure_parse_service(launchOptions)
     Parse.setApplicationId(
-      "H3d0oKIfdQ6sUDp3homJk5otvFkHZw3v4fZknyiA",
-      clientKey:"5fBRiVsT8SPm29PXtiLQRpBgPwDMP3a3ZPuEzo36"
+      "your parse app id",
+      clientKey:"your parse clientKey"
     )
     PFFacebookUtils.initializeFacebook
   end
