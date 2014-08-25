@@ -17,6 +17,8 @@ def configure_parse_service(launchOptions)
 end
 ```
 
+Run
+
 ```
 $ bundle install
 $ rake pod:install
