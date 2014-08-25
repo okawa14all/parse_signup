@@ -3,11 +3,15 @@ parse_signup
 
 Configure facebook and parse appID
 
-```Rakefile
+Rakefile:
+
+```
 FB_APP_ID = '<your facebook app id>'
 ```
 
-```app_delegate.rb
+app_delegate.rb:
+
+```
 def configure_parse_service(launchOptions)
   Parse.setApplicationId(
     "your parse app id",
