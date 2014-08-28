@@ -16,6 +16,7 @@ class MainController < UIViewController
     rmq.append(UIButton, :logout_button).on(:touch) do |sender|
       logout
     end
+
   end
 
   def init_nav
@@ -35,4 +36,5 @@ class MainController < UIViewController
       UINavigationController.alloc.initWithRootViewController(WalkthroughController.new)
     w.alpha = 1.0
   end
+
 end

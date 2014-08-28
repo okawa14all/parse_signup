@@ -28,6 +28,9 @@ class ApplicationStylesheet < RubyMotionQuery::Stylesheet
     color.add_named :fb_button_bg_color, '#3b5998'
     color.add_named :tw_button_bg_color, '#55acee'
     color.add_named :silver, '#ccc'
+
+    # SVProgressHUD.appearance.hudBackgroundColor = color.light_gray
+    # SVProgressHUD.appearance.hudForegroundColor = color.black
   end
 
   def standard_button(st)

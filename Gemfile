@@ -4,7 +4,7 @@ gem 'rake'
 gem 'ruby_motion_query'
 
 # Useful tools that most people use
-#gem 'bubble-wrap'
+gem 'bubble-wrap'
 
 # If you use a cocoapod (find them here https://www.cocoacontrols.com)
 gem 'motion-cocoapods'
@@ -20,6 +20,6 @@ gem 'motion-cocoapods'
 #gem 'cdq'
 
 # If you need to access the network, use AFMotion; it uses AFNetworking
-#gem 'afmotion'
+# gem 'afmotion'
 
 gem 'simple_si'

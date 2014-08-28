@@ -4,7 +4,7 @@ require 'motion/project/template/ios'
 require 'bundler'
 Bundler.require
 
-# require 'bubble-wrap'
+require 'bubble-wrap/core'
 
 Motion::Project::App.setup do |app|
 
@@ -35,22 +35,6 @@ Motion::Project::App.setup do |app|
   # app.fonts = ['Oswald-Regular.ttf', 'FontAwesome.otf'] # These go in /resources
   # app.frameworks += %w(QuartzCore CoreGraphics MediaPlayer MessageUI CoreData)
 
-  # # frameworks provided by Parse.com
-  # app.vendor_project('vendor/Parse.framework',
-  #   :static,
-  #   products: ['Parse'],
-  #   headers_dir: 'Headers')
-  # app.vendor_project('vendor/ParseFacebookUtils.framework',
-  #   :static,
-  #   products: ['ParseFacebookUtils'],
-  #   headers_dir: 'Headers')
-  #
-  # # Facebok SDK
-  # app.vendor_project('vendor/FacebookSDK.framework',
-  #   :static,
-  #   products: ['FacebookSDK'],
-  #   headers_dir: 'Headers')
-
   app.frameworks += [
     'Accounts',
     'AudioToolbox',
@@ -70,14 +54,13 @@ Motion::Project::App.setup do |app|
 
   app.pods do
     pod 'SIAlertView'
-    # pod 'AFNetworking'
+    pod 'AFNetworking'
     pod 'SVProgressHUD'
     # pod 'JMImageCache'
     pod 'Parse-iOS-SDK'
-    # pod 'Facebook-iOS-SDK'
   end
 
-  FB_APP_ID = '<your facebook app id>'
+  FB_APP_ID = 'your facebook app id'
   app.info_plist['FacebookAppID'] = FB_APP_ID
   app.info_plist['CFBundleURLTypes'] = [{ CFBundleURLSchemes: ["fb#{FB_APP_ID}"] }]
 end

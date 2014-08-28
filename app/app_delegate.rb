@@ -29,9 +29,13 @@ class AppDelegate
   def configure_parse_service(launchOptions)
     Parse.setApplicationId(
       "your parse app id",
-      clientKey:"your parse clientKey"
-    )
+      clientKey:"your parse clientKey")
+
     PFFacebookUtils.initializeFacebook
+
+    PFTwitterUtils.initializeWithConsumerKey(
+      "your api key",
+      consumerSecret: "your api secret")
   end
 
   def open_main
